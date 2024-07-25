@@ -3011,12 +3011,14 @@ __metadata:
     "@types/react-test-renderer": ^18.0.0
     babel-jest: ^29.6.3
     eslint: ^8.19.0
+    install: ^0.13.0
     jest: ^29.6.3
     prettier: 2.8.8
     react: 18.2.0
     react-native: 0.74.3
     react-test-renderer: 18.2.0
     typescript: 5.0.4
+    zustand: ^4.5.4
   languageName: unknown
   linkType: soft
 
@@ -5484,6 +5486,13 @@ __metadata:
   version: 2.0.4
   resolution: "inherits@npm:2.0.4"
   checksum: 4a48a733847879d6cf6691860a6b1e3f0f4754176e4d71494c41f3475553768b10f84b5ce1d40fbd0e34e6bfbb864ee35858ad4dd2cf31e02fc4a154b724d7f1
+  languageName: node
+  linkType: hard
+
+"install@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "install@npm:0.13.0"
+  checksum: 645bad1253115309c64d791c901caa8acd61a4012731015e3ee5eef88baaca026f3a48dc15a73a2827f7f5b05609804968ea1e3c6525dc0b3a21241837b9cf59
   languageName: node
   linkType: hard
 
@@ -9304,6 +9313,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"use-sync-external-store@npm:1.2.0":
+  version: 1.2.0
+  resolution: "use-sync-external-store@npm:1.2.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: 5c639e0f8da3521d605f59ce5be9e094ca772bd44a4ce7322b055a6f58eeed8dda3c94cabd90c7a41fb6fa852210092008afe48f7038792fd47501f33299116a
+  languageName: node
+  linkType: hard
+
 "util-deprecate@npm:^1.0.1, util-deprecate@npm:~1.0.1":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -9663,5 +9681,25 @@ __metadata:
   version: 0.1.0
   resolution: "yocto-queue@npm:0.1.0"
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
+  languageName: node
+  linkType: hard
+
+"zustand@npm:^4.5.4":
+  version: 4.5.4
+  resolution: "zustand@npm:4.5.4"
+  dependencies:
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0.6"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: 8e824aea8b5232f9a719c6d33e016272a0dae8c69a0980a3e2aefbcf2a89379b343af1f2dace340f45f788ec8d8a55a56d037c53498b3b05b91e985d26cae047
   languageName: node
   linkType: hard
